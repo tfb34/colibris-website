@@ -20,17 +20,15 @@ function toggleMenu(){
 
 
 function scrollToSection(id){
-	let elmnt = document.getElementById(id)
-	elmnt.scrollIntoView({behavior:"smooth",block:"start"});
+	let el = document.getElementById(id)
+	el.scrollIntoView({behavior:"smooth",block:"start"});
 	toggleMenu();
-	/*let mobilemenu = document.getElementById('mobile-menu-links');
-	if(mobilemenu.style.display === "block"){
-		toggle();
-		mobilemenu.style.display = "none";
-	}*/
 }
 function scrollToSectionNoToggle(id){
-	let elmnt = document.getElementById(id)
-	elmnt.scrollIntoView({behavior:"smooth",block:"start"});
+	let el = document.getElementById(id)
+	el.scrollIntoView({behavior:"smooth",block:"start"});
+
 }
+
+
 

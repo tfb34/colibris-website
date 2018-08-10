@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, , minimum-scale=1.0, user-scalable=no">
+	<title>ColibriTech</title>
+	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+	<!-- <script type="text/javascript" src="bundle.js"></script> -->
+</head>
+<body>
+	<div id="mobile-top-navbar">
+		<div id="logo">
+			<h1 id="logo-title">
+				<img src="assets/calibriLogo.png" align="middle">COLIBRI<span style="color:red;">TECH</span>
+				<i class="fa fa-angle-down show-inline" onclick="toggleMenu()" id="menu-open-btn"></i>
+				<i class="fa fa-angle-up hide" onclick="toggleMenu()" id="menu-close-btn"></i>
+			</h1>
+		</div>
+		<div id="menu-list" class="hide">
+			<ul>
+				<li><a href="javascript: scrollToSection('home');">Home</a></li>
+				<li><a href="javascript: scrollToSection('about');">About</a></li>
+				<li><a href="javascript: scrollToSection('services');">Services</a></li>
+				<li><a href="javascript: scrollToSection('find-us');">Find Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<div id="home" class="main-image">
+		<h2>WELCOME TO <b>COLIBRITECH</b></h2>
+		<h1>GROW YOUR BUSINESS WITH US!</h1>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+		<button><a href="javascript:scrollToSectionNoToggle('about');">GET STARTED</a></button>
+	</div>
+
+	<div class="wrapper">
+	<div id="about">
+		<h2>About Us</h2>
+	</div>
+	<div id="services">
+		<h2>Services</h2>
+	</div>
+	</div>
+
+	<div id="find-us">
+		<h2>Find Us</h2>
+	</div>
+
+	<div id="form">
+	    <form method="post" action="https://p10.secure.webhosting.luminate.com/forms?ssc=us1&amp;login=elisabethb_cpatrust">
+	    <h1>CONTACT US</h1>
+	    <p>CALL US AT <a href="tel:9088900866">(908)-890-0866</a>, OR USE THE CONTACT FORM BELOW</p>
+	    <font face="sans-serif">
+
+	    <input class="form-input" type="text" name="firstName" required="" placeholder="Name"><br/>
+	    <input type="tel" class="form-input" name="phone" required="" placeholder="Phone"><br/>
+	    <input class="form-input" type="email" name="email" size="27" required="" placeholder="Email"><br/>
+	    <textarea class="form-text-input" cols="40" rows="5" placeholder="Message" name="message" required=""></textarea><br/>      
+	    </font>         
+	    <input class="form-btn send" type="submit" value="Send">
+	    <input type="hidden" name="subject" value="Contact Form">
+	    <input type="hidden" name="next_url" value="http://jscpagrowth.com/contact_us">
+	    </form>
+    </div>
+	<footer>
+		<div>
+			<img src="assets/calibriLogo.png">
+			<p>COLIBRITECH</p>
+			<p>75 Redwood Road<br/>Springfield, NJ 07081</p>
+			<a href="tel:9088900866">(908)-890-0866</a>
+		</div>
+	</footer>
+	<script src="myscript.js"></script>
+</body>
+</html>

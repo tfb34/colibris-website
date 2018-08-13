@@ -116,6 +116,11 @@ ul{
    	margin:0;
     color: white;
     background-color: #B8D8D8;
+    padding-bottom:3em;
+}
+#find-us a{
+	color:white;
+	text-decoration: underline;
 }
 #menu-close-btn, #menu-open-btn{
 	font-size:24px;
@@ -173,17 +178,16 @@ form{
 	max-width: 500px;
     padding: 1em;
     margin: 0 auto;
+
 }
 #form{
     background-color: rgb(234, 234, 234);
     width:100%;
     padding:3em 0;
-    /*max-width: 500px;
-    padding: 1em;
-    margin: 80px auto;*/
 }
 #form h1{
 	font-size:18px;
+	text-align: center;
 }
 #form p{
 	font-size: 14px;
@@ -258,7 +262,9 @@ form{
 	}
 }
 @media only screen and (min-width: 1024px){
-
+	.wrapper{
+		margin-top:0.5%;
+	}
 	.column-1,.column-2{
 		/*width:600px;*/
 		width:45%;
@@ -268,6 +274,10 @@ form{
     	padding: 6em 3em;
     	margin-bottom: 0.5%;
     	margin-top:0.5%;
+	}
+	#form h1{
+		font-size:18px;
+		text-align: left;
 	}
 	.column-1{
 		margin-left: 4.5%;

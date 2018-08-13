@@ -75,14 +75,6 @@ ul{
 	clear:both;
 	background-color: red;
 }
-#find-us{
-	height:50vh;
-	text-align: center;
-	padding-top:5em;
-	/*background-color: #95D9DA;*/
-    margin: 1em;
-    color: white;
-}
 .subheader{
 	margin-bottom: 1em;
 }
@@ -95,21 +87,35 @@ ul{
     margin: 0;
     padding: 6em 1em;
 }
-#services{
-	/*background-color:#95D9DA;*/
-	background-color: #28AFB0;
-	color:white;
-}
 #about{
-	/*background-color: #A3BAC3;*/
-	background-color: #19647E;
+/*	background-color: #19647E;*/
+	background-color: #0D5C63;
 	color:white;
 }
-
-#find-us{
-	background-color: #F4D35E;
+#services{
+/*	background-color: #28AFB0;*/
+	background-color: #44A1A0;
+	color:white;
 }
-
+#business-relationships{
+	/*background-color: #35A7FF;*/
+	background-color: #78CDD7;
+	color:white;
+}
+#resources{
+	/*background-color: #38618C;*/
+	background-color: #247B7B;
+	color:white;
+}
+#find-us{
+	height:50vh;
+	text-align: center;
+	padding-top:5em;
+	/*	background-color: #F4D35E;*/
+    margin: 1em;
+    color: white;
+    background-color: #B8D8D8;
+}
 #menu-close-btn, #menu-open-btn{
 	font-size:24px;
 }
@@ -225,14 +231,6 @@ form{
 }
 #find-us ul li{
 	list-style: none;
-}
-#business-relationships{
-	background-color: #35A7FF;
-	color:white;
-}
-#resources{
-	background-color: #38618C;
-	color:white;
 }
 @media only screen and (min-width: 700px){
 	#home h2{

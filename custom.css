@@ -21,6 +21,7 @@ ul{
 	box-sizing: border-box;
     padding-top: 30vh;
     text-align: center;
+    background-size: cover;
 }
 #home{
 	color:white;
@@ -108,13 +109,16 @@ ul{
 	color:white;
 }
 #find-us{
-	height:50vh;
+	height:30vh;
 	text-align: center;
-	padding-top:5em;
-	/*	background-color: #F4D35E;*/
-    margin: 1em;
+	padding-top:6em;
+	/*	background-color: #F4D35E; yellow*/
+   	margin:0;
     color: white;
     background-color: #B8D8D8;
+}
+#find-us{
+	color: #0D5C63;
 }
 #menu-close-btn, #menu-open-btn{
 	font-size:24px;
@@ -198,12 +202,18 @@ form{
 }
 .form-btn{
 	width: 5em !important;
-    background-color: #19647E;
+    background-color: #0D5C63;
     border: none;
     color:white;
+    cursor: pointer;
 }
 .wrapper{
 	text-align: center;
+}
+.wrapper:after{
+	content:"";
+	display: block;
+	clear:both;
 }
 .overlay{
 	background-color: rgba(0,0,0,0.5);
@@ -232,6 +242,13 @@ form{
 #find-us ul li{
 	list-style: none;
 }
+#banner{
+	background-color: #0D5C63;color:white;text-align: center;padding:2em;
+}
+#banner a{
+	color:white;
+	text-decoration: underline;
+}
 @media only screen and (min-width: 700px){
 	#home h2{
 		font-size: 18px;
@@ -244,6 +261,7 @@ form{
 	}
 }
 @media only screen and (min-width: 1024px){
+
 	.column-1,.column-2{
 		/*width:600px;*/
 		width:45%;
@@ -251,24 +269,20 @@ form{
 		height:60vh;
 		text-align: left;
     	padding: 6em 3em;
-
-
-    /*	width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 6em 1em;*/
+    	margin-bottom: 0.5%;
+    	margin-top:0.5%;
 	}
 	.column-1{
-		margin-left: 4%;
-		margin-right:1%;
+		margin-left: 4.5%;
+		margin-right:0.5%;
 	}
 	.column-2{
-		margin-left:1%;
-		margin-right: 4%;
+		margin-left:0.5%;
+		margin-right: 4.5%;
 	}
 	#find-us{
 		clear: both;
+		 margin: 0.5% 4.5% 1% 4.5%;
 	}
 	#home h2{
 		font-size: 24px;

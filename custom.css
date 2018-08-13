@@ -9,6 +9,11 @@ h1,h2,h3,h4,h5,h6,p{
 a{
 	text-decoration: none;
 }
+ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
 .main-image{
 	background: url(assets/calibriMainPic.jpeg) no-repeat center;
 	height:100vh;
@@ -70,7 +75,7 @@ a{
 	clear:both;
 	background-color: red;
 }
-#services, #about, #find-us{
+#find-us{
 	height:50vh;
 	text-align: center;
 	padding-top:5em;
@@ -78,17 +83,33 @@ a{
     margin: 1em;
     color: white;
 }
+.subheader{
+	margin-bottom: 1em;
+}
+.column-1, .column-2{
+	width: 100%;
+    display: block;
+    float: none;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 6em 1em;
+}
 #services{
 	/*background-color:#95D9DA;*/
 	background-color: #28AFB0;
+	color:white;
 }
 #about{
 	/*background-color: #A3BAC3;*/
 	background-color: #19647E;
+	color:white;
 }
+
 #find-us{
 	background-color: #F4D35E;
 }
+
 #menu-close-btn, #menu-open-btn{
 	font-size:24px;
 }
@@ -199,6 +220,20 @@ form{
 	text-decoration: none;
 	color:white;
 }
+#find-us ul{
+	padding:0;
+}
+#find-us ul li{
+	list-style: none;
+}
+#business-relationships{
+	background-color: #35A7FF;
+	color:white;
+}
+#resources{
+	background-color: #38618C;
+	color:white;
+}
 @media only screen and (min-width: 700px){
 	#home h2{
 		font-size: 18px;
@@ -211,10 +246,31 @@ form{
 	}
 }
 @media only screen and (min-width: 1024px){
-	#about,#services{
+	.column-1,.column-2{
 		/*width:600px;*/
-		width:500px;
-		display: inline-block;
+		width:45%;
+		float:left;
+		height:60vh;
+		text-align: left;
+    	padding: 6em 3em;
+
+
+    /*	width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 6em 1em;*/
+	}
+	.column-1{
+		margin-left: 4%;
+		margin-right:1%;
+	}
+	.column-2{
+		margin-left:1%;
+		margin-right: 4%;
+	}
+	#find-us{
+		clear: both;
 	}
 	#home h2{
 		font-size: 24px;
@@ -228,11 +284,11 @@ form{
 
 }
 @media only screen and (min-width: 1300px){
-	#about,#services{
-		/*width:600px;*/
+	/*#about,#services{
+		
 		width:600px;
 		display: inline-block;
-	}
+	}*/
 	#menu-open-btn{
 		display: none;
 	}

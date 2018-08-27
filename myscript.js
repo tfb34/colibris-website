@@ -24,6 +24,19 @@ function scrollToSection(id){
 	el.scrollIntoView({behavior:"smooth",block:"start"});
 	toggleMenu();
 }
+
+const mobileMenu = document.getElementById('mobile-menu');
+function toggleMenu(){
+	console.log(mobileMenu);
+	if(mobileMenu.classList.contains('hide')){
+		mobileMenu.classList.remove('hide');
+		mobileMenu.classList.add('show');
+	}else{
+		mobileMenu.classList.remove('show');
+		mobileMenu.classList.add('hide');
+	}
+}
+
 function scrollToSectionNoToggle(id){
 	let el = document.getElementById(id)
 	el.scrollIntoView({behavior:"smooth",block:"start"});

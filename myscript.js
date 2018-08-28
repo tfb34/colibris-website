@@ -1,4 +1,4 @@
-let  menuOpenBtn= document.getElementById('menu-open-btn');
+/*let  menuOpenBtn= document.getElementById('menu-open-btn');
 let menuCloseBtn = document.getElementById('menu-close-btn');
 let menuList = document.getElementById('menu-list');
 
@@ -41,7 +41,37 @@ function scrollToSectionNoToggle(id){
 	let el = document.getElementById(id)
 	el.scrollIntoView({behavior:"smooth",block:"start"});
 
+}*/
+var t = new TimelineMax();
+
+t.to('#body', 1, {
+        autoAlpha: 1,
+        ease: Power1.easeInOut
+    })
+	.to('#ring', 1, {
+		autoAlpha:1,
+        strokeDashoffset:0,
+        ease: Power1.easeInOut,
+        delay:1
+    })
+    .to('#body,#ring',1,{autoAlpha:0, ease:Power1.easeOut},"-=0.5")
+    .to('#loading-page',1.5,{autoAlpha:0,display:"none",ease:Power1.easeOut},"-=0.5")
+
+let selected;
+
+function onHoverOver(id){
+  selected = document.getElementById(id);
+  selected.classList.remove('unselected');
+  TweenMax.to('.unselected',0.2,{color:'rgba(255,255,255,0.5)'})
 }
+
+function onHoverOut() {
+/*  selected = document.getElementById(id);*/
+  selected.classList.add('unselected');
+  TweenMax.to('.unselected',0.8, {color:'white'})
+}
+
+
 
 
 

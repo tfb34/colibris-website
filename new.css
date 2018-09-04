@@ -1,0 +1,54 @@
+body{
+	margin:0;
+	/*overflow-x:hidden;*/
+}
+#stripe-bg{
+	position: fixed;
+/*	position: absolute;*/
+    width: 5440px;
+    height: 100%;
+    left:-2560px;
+    
+}
+.stripes{
+	position: relative;
+	box-sizing: border-box;
+	width:160px;
+	height:100%;
+	border-right:1px solid rgba(255,255,255,0.2);
+	float:left;
+}
+.stripes > div{
+	position: absolute;
+	right:0;
+	height:100%;
+	background-color: white;
+	width:0;
+}
+/*#div17{
+	background-color:green;
+}*/
+@media only screen and (min-width: 375px){
+	.stripes{
+		width:188px;
+	}
+	#stripe-bg{
+	    width: 6392px;
+	}
+}
+@media only screen and (min-width: 425px){
+	.stripes{
+		width:190px;
+	}
+	#stripe-bg{
+	    width: 6460px;
+	}
+}
+@media only screen and (min-width: 768px){
+	.stripes{
+		width: 200px;
+	}
+	#stripe-bg{
+	    width: 6800px;
+	}
+}

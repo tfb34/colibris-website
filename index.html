@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	<!-- <script type="text/javascript" src="bundle.js"></script> -->
 </head>
@@ -75,7 +75,7 @@
 	</div>
 	<div id="mobile-menu" class="center" >
 		<ul>
-			<li><a href="file:///C:/Users/Thalia/Desktop/colibris_projects/colibris-website/index.html#" onclick="">who we are</a></li>
+			<li><a href="javascript:scrollToSection('about');" >who we are</a></li>
 			<li><a href="#">what we do</a></li>
 			<li><a href="#">projects</a></li>
 			<li><a href="#">get in touch</a></li>
@@ -154,8 +154,8 @@
 		<ul id="home-navbar">
 			<li><a href="file:///C:/Users/Thalia/Desktop/colibris_projects/colibris-website/who-we-are.html" class="unselected" onmouseover="onHoverOver('about')" onmouseout="onHoverOut()" id="about-option">who we are</a></li>
 			<li><a href="javascript:scrollToSectionNoToggle('services')" class="unselected" onmouseover="onHoverOver('services')" onmouseout="onHoverOut()" id="services-option">what we do</a></li>
-			<li><a href="#"  class="unselected" onmouseover="onHoverOver('projects')" onmouseout="onHoverOut()" id="projects-option">projects</a></li>
-			<li><a href="#" class="unselected" onmouseover="onHoverOver('contact')" onmouseout="onHoverOut()" id="contact-option">get in touch</a></li>
+			<li><a href="javascript: scrollToSectionNoToggle('templates')"  class="unselected" onmouseover="onHoverOver('projects')" onmouseout="onHoverOut()" id="projects-option">projects</a></li>
+			<li><a href="javascript: scrollToSectionNoToggle('contact')" class="unselected" onmouseover="onHoverOver('contact')" onmouseout="onHoverOut()" id="contact-option">get in touch</a></li>
 		</ul>
 	</div>
 	<!--scroll svg-->
@@ -260,7 +260,7 @@
 		</div>
 	</div>
 	<div id="services" class="section" style="background-color:rgb(248,248,248);">
-		<div class="wrapper">
+		<div class="wrapper" style="">
 			<h1 style="text-align: right">SERVICES</h1>
 			<div class="info" style="text-align: justify;margin-bottom:2em">
 				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p><br/>
@@ -286,7 +286,162 @@
 			</div>
 		</div>
 	</div>
-	
+	<div id="templates" class="section" >
+		<div class="wrapper">
+			<h1 style="">templates</h1>
+			<div class="info" style="margin-bottom:2em">
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+			</div>
+			<div class="template">
+				<div class="template-bar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<img src="assets/pet-sitter-template.png">
+			</div>
+			<div class="template-info">
+				<h3>services</h3>
+				<span></span>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<a href="">Explore</a>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 337.792 337.792" style="enable-background:new 0 0 337.792 337.792;" xml:space="preserve" width="512px" height="512px">
+					<g>
+						<path d="M337.792,134.824l-130.824,99.441v-52.216C117.061,173.419,30.735,207.817,0.001,302.41   C-0.337,180.728,99.895,111.781,206.968,88.488V35.382L337.792,134.824z" fill="#52cec0"/>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+				</svg>
+			</div>
+			<div class="template">
+				<div class="template-bar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<img src="assets/portfolio-template2.png">
+			</div>
+			<div class="template-info">
+				<h3>portfolio</h3>
+				<span></span>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<a href="">Explore</a>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 337.792 337.792" style="enable-background:new 0 0 337.792 337.792;" xml:space="preserve" width="512px" height="512px">
+					<g>
+						<path d="M337.792,134.824l-130.824,99.441v-52.216C117.061,173.419,30.735,207.817,0.001,302.41   C-0.337,180.728,99.895,111.781,206.968,88.488V35.382L337.792,134.824z" fill="#52cec0"/>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+				</svg>
+			</div>
+			<div class="template">
+				<div class="template-bar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<img src="assets/accountant-template.png">
+			</div>
+			<div class="template-info">
+				<h3>business</h3>
+				<span></span>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<a href="">Explore</a>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 337.792 337.792" style="enable-background:new 0 0 337.792 337.792;" xml:space="preserve" width="512px" height="512px">
+					<g>
+						<path d="M337.792,134.824l-130.824,99.441v-52.216C117.061,173.419,30.735,207.817,0.001,302.41   C-0.337,180.728,99.895,111.781,206.968,88.488V35.382L337.792,134.824z" fill="#52cec0"/>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+				</svg>
+			</div>
+		</div>
+
+	</div>
 </div>
 <!--FOOTER-->
 	<footer>

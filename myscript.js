@@ -19,12 +19,6 @@ function toggleMenu(){
 }
 
 
-function scrollToSection(id){
-	let el = document.getElementById(id)
-	el.scrollIntoView({behavior:"smooth",block:"start"});
-	toggleMenu();
-}
-
 const mobileMenu = document.getElementById('mobile-menu');
 function toggleMenu(){
 	console.log(mobileMenu);
@@ -188,6 +182,7 @@ function moveStripesDownward(){
 
 /*SCROLLING FUNCTIONS*/
 function scrollToSectionNoToggle(id){
+	console.log("clicked")
 	let el = document.getElementById(id)
 	el.scrollIntoView({behavior:"smooth",block:"start"});
 }
@@ -207,5 +202,12 @@ window.addEventListener('scroll', function(e){
     }
 
 });
+
+
+function scrollToSection(id){
+	let el = document.getElementById(id)
+	el.scrollIntoView({behavior:"instant",block:"start"});
+	toggleStripes();
+}
 
 

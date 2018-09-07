@@ -1,43 +1,18 @@
-/*let  menuOpenBtn= document.getElementById('menu-open-btn');
-let menuCloseBtn = document.getElementById('menu-close-btn');
-let menuList = document.getElementById('menu-list');
 
-function toggleMenu(){
-	if(menuOpenBtn.classList.contains('show-inline')){
-		menuOpenBtn.classList.remove('show-inline');
-		menuCloseBtn.classList.remove('hide');
-		menuOpenBtn.classList.add('hide');
-		menuCloseBtn.classList.add('show-inline');
-		menuList.className = "show";
-	}else{
-		menuOpenBtn.classList.remove('hide');
-		menuCloseBtn.classList.remove('show-inline');
-		menuOpenBtn.classList.add('show-inline');
-		menuCloseBtn.classList.add('hide');
-		menuList.className = "hide";
-	}
-}
-
-
-const mobileMenu = document.getElementById('mobile-menu');
-function toggleMenu(){
-	console.log(mobileMenu);
-	if(mobileMenu.classList.contains('hide')){
-		mobileMenu.classList.remove('hide');
-		mobileMenu.classList.add('show');
-	}else{
-		mobileMenu.classList.remove('show');
-		mobileMenu.classList.add('hide');
-	}
-}
-
-function scrollToSectionNoToggle(id){
-	let el = document.getElementById(id)
-	el.scrollIntoView({behavior:"smooth",block:"start"});
-
-}*/
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
+}
+
+/*CENTER COLUMN BG ON WINDOW RESIZE*/
+
+let resizeId;
+window.addEventListener('resize', function(){
+	clearTimeout(resizeId);
+	resizeId = setTimeout(doneResizing, 500);
+});
+
+function doneResizing(){
+	if(document.getElementById('stripe-bg')) setStripeBackground();
 }
 
 var t = new TimelineMax();
@@ -71,18 +46,6 @@ function showOverflow(){
 	if(document.getElementsByTagName('title')[0].innerText != "home : colibritech"){
 		document.getElementsByTagName('body')[0].style.overflowY = "scroll";
 	}
-}
-
-/*CENTER COLUMN BG ON WINDOW RESIZE*/
-
-let resizeId;
-window.addEventListener('resize', function(){
-	clearTimeout(resizeId);
-	resizeId = setTimeout(doneResizing, 500);
-});
-
-function doneResizing(){
-	if(document.getElementById('stripe-bg')) setStripeBackground();
 }
 
 
@@ -207,7 +170,50 @@ window.addEventListener('scroll', function(e){
 function scrollToSection(id){
 	let el = document.getElementById(id)
 	el.scrollIntoView({behavior:"instant",block:"start"});
-	toggleStripes();
+	toggleBtn();
+}
+
+var t2 = new TimelineMax();
+
+let currId;
+function dropdownItemHover(id){
+	console.log("hovering");
+	let target = '#'+id+' > span';
+	currId  = id;
+	t2.staggerTo(target, 0.1, {color:'yellow'},0.05)
+}
+
+function dropdownItemHoverOff(id){
+	console.log("off");
+	let target = '#'+id+' > span';
+	/*TweenMax.staggerTo(target, 0.1, {color:'white'},-0.05)*/
+	TweenMax.killTweensOf(target);
+
 }
 
 
+
+
+var childAnimation;
+
+function newHover(id){
+	console.log("hovering");
+	let target = '#'+id+' > span';
+	childAnimation = TweenLite.to(target, 0.2, {width:'100%', ease:Power1.easeIn});
+	/*console.log(childAnimation.reversed());*/
+	
+}
+
+
+function toggleAnimation(){
+	console.log("toggled");
+
+	console.log(childAnimation);
+	if (childAnimation.reversed() ) {
+    childAnimation.play();
+  } else {
+    childAnimation.reverse();
+  }
+
+  
+}

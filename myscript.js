@@ -145,8 +145,8 @@ function moveStripesDownward(){
 
 /*SCROLLING FUNCTIONS*/
 function scrollToSectionNoToggle(id){
-	console.log("clicked")
-	let el = document.getElementById(id)
+/*	console.log("clicked")*/
+	let el = document.getElementById(id);
 	el.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
@@ -158,10 +158,10 @@ window.addEventListener('scroll', function(e){
   
     if((rect.top +50 ) < 0 && nav.classList.contains("hide")){
   	  	nav.classList.remove('hide');
-  	  	console.log("show navbar")
+  	  	/*console.log("show navbar")*/
     }else if((rect.top + 50)>= 0 && !nav.classList.contains("hide")){
     	nav.classList.add('hide');
-    	console.log("don't show navbar")
+    	/*console.log("don't show navbar")*/
     }
 
 });
@@ -177,14 +177,14 @@ var t2 = new TimelineMax();
 
 let currId;
 function dropdownItemHover(id){
-	console.log("hovering");
+/*	console.log("hovering");*/
 	let target = '#'+id+' > span';
 	currId  = id;
 	t2.staggerTo(target, 0.1, {color:'yellow'},0.05)
 }
 
 function dropdownItemHoverOff(id){
-	console.log("off");
+/*	console.log("off");*/
 	let target = '#'+id+' > span';
 	/*TweenMax.staggerTo(target, 0.1, {color:'white'},-0.05)*/
 	TweenMax.killTweensOf(target);
@@ -197,7 +197,7 @@ function dropdownItemHoverOff(id){
 var childAnimation;
 
 function newHover(id){
-	console.log("hovering");
+/*	console.log("hovering");*/
 	let target = '#'+id+' > span';
 	childAnimation = TweenLite.to(target, 0.2, {width:'100%', ease:Power1.easeIn});
 	/*console.log(childAnimation.reversed());*/
@@ -206,9 +206,9 @@ function newHover(id){
 
 
 function toggleAnimation(){
-	console.log("toggled");
+	/*console.log("toggled");*/
 
-	console.log(childAnimation);
+/*	console.log(childAnimation);*/
 	if (childAnimation.reversed() ) {
     childAnimation.play();
   } else {
